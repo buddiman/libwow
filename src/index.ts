@@ -1,2 +1,2 @@
-export * from './DBC'
-export * from './dbcHeader'
+export * from './DBC/DBC'
+export * from './DBC/DBCHeader'

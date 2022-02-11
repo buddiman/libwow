@@ -1,8 +1,10 @@
-import { FileReader } from "./fileReader"
-import { DBCHeader } from "./dbcHeader"
+import { FileReader } from "../fileReader"
+import { DBCHeader } from "./DBCHeader"
 
 export class DBC extends FileReader {
     private header: DBCHeader
+    private rows: Buffer = Buffer.alloc(0)
+    private stringBlock: Buffer = Buffer.alloc(0)
 
     constructor(filename: string) {
         super(filename)

@@ -1,5 +1,5 @@
-import { DBC } from "../src/DBC"
-import { DBCHeader } from "../src/dbcHeader"
+import { DBC } from "../src/DBC/DBC"
+import { DBCHeader } from "../src/DBC/dbcHeader"
 import path from "path"
 
 let testDbc: DBC
